@@ -1,0 +1,191 @@
+{
+	"variables": [],
+	"info": {
+		"name": "notes",
+		"_postman_id": "7faf6366-a47f-066e-993a-3b70bac09582",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get notes",
+			"request": {
+				"url": "http://localhost:8080/note",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\" : \"bla\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create note",
+			"request": {
+				"url": "http://localhost:8080/note",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\" : \"foo\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update note",
+			"request": {
+				"url": "http://localhost:8080/note/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\" : \"test\", \"content\" : \"foo bar\", \"color\": \"yellow\", \"due\" : \"2017-04-22T19:24:16.838\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "assign tag",
+			"request": {
+				"url": "http://localhost:8080/note/1/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\" : \"foo bar\", \"color\": \"yellow\", \"due\" : null}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete note",
+			"request": {
+				"url": "http://localhost:8080/note/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\" : \"foo\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get tags",
+			"request": {
+				"url": "http://localhost:8080/note",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\" : \"bla\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create tag",
+			"request": {
+				"url": "http://localhost:8080/note",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\" : \"foo\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update tag",
+			"request": {
+				"url": "http://localhost:8080/tag/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\" : \"foo\", \"color\": \"blue\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete tag",
+			"request": {
+				"url": "http://localhost:8080/tag/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\" : \"foo\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
